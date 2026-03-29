@@ -1,0 +1,8 @@
+-I have only used 20% of my learning in this project, the rest 80% can also be used to make the project much more deterministic and clean
+-will try to have less variance for ISR latency
+-will work with flash and implement memory protection(for once the system restarted)
+-recovering and using logged data in flash
+-memory safety (MPU can be implemented)
+-better timing analysis and stress tests (under more load)
+-Right now everything is mostly in a single file, will split into modules (e.g : scheduler.c, adc_dma.c , uart.c etcetc)
+-real time plotting of data (graphs)
