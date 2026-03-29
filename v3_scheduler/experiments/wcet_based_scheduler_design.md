@@ -18,6 +18,8 @@
 	
 	
 	t_mean = 128 cycles
+
+	##Analysis
 	
 	ISR activity dominates execution variability while baseline execution remains ~constant (128 cycles) and close to the lowest case(~37–39 cycles)
 	Neither warm-up discard nor EXTI button have negligible impact
@@ -25,7 +27,8 @@
 	
 	WCET ( worst case execution time) = 24k cycles ≈ 285 µs, add margin , then target period = 500µs , thus timer2 is set to 2khz
 	
-	
+	##Scheduler Design & Overrun detection
+
 	after this we check for any overruns using the following logic :
 	(Overrun = next scheduler tick arrives before current execution finishes)
 	if there are more overruns than the OVERRUN_LIMIT then we flag it, which can be further used for developing the state machine
