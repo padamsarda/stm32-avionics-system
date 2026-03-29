@@ -1,7 +1,7 @@
 # Deterministic Fault-Tolerant Embedded System (STM32F401)
 Focus was not features — but determinism, fault handling, and how the system behaves when things go wrong.
-final file -> deterministic_system
 ---
+final file -> deterministic_system
 
 ## System Overview
 
