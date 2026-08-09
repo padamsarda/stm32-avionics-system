@@ -1,5 +1,5 @@
 # Deterministic Fault-Tolerant Embedded System (STM32F401)
-Focus was not features — but determinism, fault handling, and how the system behaves when things go wrong.
+Focus was not features; but determinism, fault handling.
 ---
 final file -> deterministic_system
 
@@ -36,7 +36,6 @@ final file -> deterministic_system
 
 * TIM2 based (500 µs)
 * No RTOS
-* Single-threaded execution
 * Measured using DWT cycle counter
 
 ### ADC + DMA Pipeline
@@ -115,23 +114,20 @@ detect → recover → fail → FAULT → reset
 
 ## Design Choices
 
-* No RTOS (intentional)
-* No MPU (kept simple)
-* No flash erase during runtime
-* No unnecessary abstraction
-
-Goal was clarity + control, not complexity
+* No RTOS 
+* No MPU 
+* No flash erase during runtime (caused bugs and issues)
 
 ---
 
 ## Notes
 
-This project was mainly about understanding:
+This project was mainly about :
 
-* how things fail
-* how to detect failure early
-* and how to recover safely
-
+* understanding low level program mechanics
+* how to make embedded systems that detect failure and recover safely
+* understanding STM32 and architecture of similar microcontrollers
+  
 Not about building a big system — but building a correct one
 
 
